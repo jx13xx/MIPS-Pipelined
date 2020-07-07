@@ -46,3 +46,21 @@ if(MemWrite='1') then
 mydata((to_integer(unsigned(address))-268435456)/4) <= WriteData;
 end if;
 ```
+
+### Control Unit
+
+**INPUT:**
+- OpCode: 26th to 31st bit of the instructions. 
+
+
+**OUTPUT:**
+-  Branch: 	1 bit
+-  MemRead: 	1 bit
+-  MemWrite: 	1 bit
+-  MemToReg: 	1 bits
+-  RegDst: 	1 bit
+-  ALUOp: 	2 bits
+-  ALUsrc: 	1 bit
+-  Jump: 		1 bit
+
+
