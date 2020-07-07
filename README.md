@@ -21,6 +21,18 @@ The main **5-Stages** in a RISC pipeline architecture
  - MemWrite: take the write data and write it on correct address specified by address input. 
  - MemRead: Look at address, and transfer the data onto read data.
 
+```VHDL 
+entity datamemory1 is
+    Port ( address : in STD_LOGIC_VECTOR (31 downto 0);
+           WriteData : in STD_LOGIC_VECTOR (31 downto 0);
+           ReadData : out STD_LOGIC_VECTOR (31 downto 0);
+           MemRead : in STD_LOGIC;
+           MemWrite : in STD_LOGIC ;
+          clk : in STD_LOGIC
+           );
+          
+end datamemory1;
+```
 
  ```VHDL
   begin
