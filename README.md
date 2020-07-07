@@ -63,4 +63,13 @@ end if;
 -  ALUsrc: 	1 bit
 -  Jump: 		1 bit
 
+### ALU Control Unit
+
+**INPUT:**
+- Function: 0-5th bit of Instruction memory
+- ALUop: 2 bits
+ 
+**OUTPUT:**
+- Operation: 3 or 4 bits
+
 
