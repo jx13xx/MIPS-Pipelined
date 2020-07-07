@@ -1,0 +1,16 @@
+{
+	'objects' => [
+		{
+			'name' => '/pipeline_test25/Clock'
+		},
+		{
+			'name' => '/pipeline_test25/EX MEM/Out6'
+		},
+		{
+			'name' => '/pipeline_test25/PC +4/Out1'
+		},
+		{
+			'name' => '/pipeline_test25/Instruction memory/Out1'
+		},
+	],
+}
