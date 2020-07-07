@@ -22,4 +22,15 @@ The main **5-Stages** in a RISC pipeline architecture
  - MemRead: Look at address, and transfer the data onto read data.
 
 
+ ```VHDL
+  begin
+ datamem:
+ process(MemRead,MemWrite)
+ variable mem_adr: natural;
  
+begin
+ReadData <= mydata((to_integer(unsigned(address))-268435456)/4);
+if(MemWrite='1') then
+mydata((to_integer(unsigned(address))-268435456)/4) <= WriteData;
+end if;
+```
